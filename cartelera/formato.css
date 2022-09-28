@@ -1,0 +1,132 @@
+
+html{box-sizing: border-box;}
+
+*,*::before,*::after{box-sizing: inherit;}
+   
+  
+
+    body{font-family: Arial, Helvetica, sans-serif;
+      background: black;
+    }html{box-sizing: border-box;}
+
+
+
+
+      img{
+      width: 320px;
+      height: 500px;
+    }
+
+    header{
+
+       background-color: rgb(113, 228, 222);
+       color: rgb(24, 23, 23);
+       margin-top: 0px;
+       padding: 20px;
+       text-align: center;
+    }
+
+    .flip-card{
+      background-color: transparent;
+      height: 520px;
+      margin: auto;
+      margin-bottom: 25px;
+      margin-top: 15px;
+      perspective: 1000px;
+      width: 400px;
+    }
+
+  .flip-card-front{
+      background-color: black;
+      color: rgba(17, 17, 84, 0.404);
+  }
+
+      
+
+.flip-card-black{
+     background-color: rgb(70, 65, 71);
+     color: white;
+     transform: rotateY(180deg);
+
+    }
+
+.flip-card-front,.flip-card-black{
+     backface-visibility: hidden;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+    }
+
+.flip-card-inner{
+     box-shadow: 0 4px 8px 0 rgba (0,0,0,0,2);
+     height: 100%;
+     text-align: center;
+     transition: transforms 0.6s;
+     transform-style: preserve-3d;
+     position: relative;
+      width: 100%;
+    }
+
+.flip-card:hover .flip-card-inner{
+      transform: rotateY(180deg);
+    }
+      
+.button{
+     background-color: rgb(33, 179, 193);
+     border: none;
+     color: aliceblue;
+     display: inline;
+     font-weight: bold;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 20px;
+     width: 100%;
+    }
+
+    .name{
+     font-size: 50px;
+    }
+
+    .cartelera{
+     font-weight: bold;
+     text-transform: uppercase;
+    }
+
+    .abs{
+     display: flex;
+    }
+
+    #form {
+      width: 250px;
+      margin: 0 auto;
+      height: 50px;
+    }
+    
+    #form p {
+      text-align: center;
+    }
+    
+    #form label {
+      font-size: 20px;
+    }
+    
+    input[type="radio"] {
+      display: none;
+    }
+    
+    label {
+      color: grey;
+    }
+    
+    .clasificacion {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+    
+    label:hover,
+    label:hover ~ label {
+      color: orange;
+    }
+    
+
+
